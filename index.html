@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Alberto Zaragosi - Portfolio</title>
-    <link rel="stylesheet" href="CSS/styles.css">
+    <link id="style-link" rel="stylesheet" href="CSS/styles-default.css">
+    <script src="JS/Scripts.js"></script>
 </head>
 <body>
 
@@ -21,11 +22,18 @@
     <!-- Welcome Section -->
     <header id="about">
         <div class="container">
-            <h1>Alberto Zaragosi Tenorio</h1>
-            <p>Aspiring Developer studying in Spain</p>
+            <h1>Your Name</h1>
+            <p>Aspiring Developer based in Spain</p>
             <a href="about.html"><button>Learn More</button></a>
         </div>
     </header>
+
+    <section id="ChangeStyle" class="container">
+        <h2>Change Style</h2>
+        <button id="style-button" onclick="changeStyle()">Try me!!</button>
+        <p>[<b>Default</b>]-[<b>Modern</b>]-[<b>Futurist</b>]-[<b>Cyberpunk</b>]-[<b>Pink</b>]</p>
+    </section>
+
 
     <!-- Skills Section -->
     <section id="skills" class="container">
@@ -44,22 +52,68 @@
     <!-- Projects Section -->
     <section id="projects" class="container">
         <h2>Projects</h2>
-        <!-- Add information about your projects here -->
+        <!-- information about projects here -->
+        <div class="projects-section">
+            <h3>Java Projects</h3>
+            <div class="projects-grid">
+                <a href="proyect1.html">
+                    <div class="project-item">
+                        <img src="java-project1.jpg" alt="Java Project 1">
+                        <h3>Java Project 1</h3>
+                    </div>
+                    <div class="project-item">
+                        <img src="java-project2.jpg" alt="Java Project 2">
+                        <h3>Java Project 2</h3>
+                    </div>
+                </a><!-- Agrega más proyectos de Java aquí -->
+            </div>
+        </div>
+    
+        <div class="projects-section">
+            <h3>Android Projects</h3>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="android-project1.jpg" alt="Android Project 1">
+                    <h3>Android Project 1</h3>
+                </div>
+                <div class="project-item">
+                    <img src="android-project2.jpg" alt="Android Project 2">
+                    <h3>Android Project 2</h3>
+                </div>
+                <!-- Agrega más proyectos de Android aquí -->
+            </div>
+        </div>
+    
+        <div class="projects-section">
+            <h3>C++ Projects</h3>
+            <div class="projects-grid">
+                <div class="project-item">
+                    <img src="cpp-project1.jpg" alt="C++ Project 1">
+                    <h3>C++ Project 1</h3>
+                </div>
+                <div class ="project-item">
+                    <img src="cpp-project2.jpg" alt="C++ Project 2">
+                    <h3>C++ Project 2</h3>
+                </div>
+                <!-- Agrega más proyectos de C++ aquí -->
+            </div>
+        </div>
+        
         <a href="projects.html"><button>View Projects</button></a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container">
         <h2>Contact</h2>
-        <p>Email: albertozartenorio@email.com</p>
-        <p>LinkedIn: linkedin.com/in/albertoZaragosiTenorio</p>
-        <!-- Add more contact information if needed -->
-        <a href="contact.html"><button>Contact Me</button></a>
+        <p>Email: albertozartenorio@gmail.com</p>
+        <p>LinkedIn: <a href="https:\\www.linkedin.com/in/AlbertoZaragosiTenorio" target="_blank">Click me!</a></p>
+        <!-- With this method i reveal my number just in case they wanna call me -->
+        <a class="contact-button" onclick="revealPhoneNumber()">Contact Me</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p></p>
+        <p id="phone-number">&phone; +353 0899414829</p>
     </footer>
 
 </body>
