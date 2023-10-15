@@ -1,0 +1,134 @@
+/* Moderno */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+header {
+    background-color: #2c3e50;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+section {
+    margin: 40px 0;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+    font-size: 18px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #34495e;
+}
+
+/* Hover effect for navigation links */
+nav a:hover {
+    color: #3498db;
+}
+
+/* Hidden state for the phone number */
+#phone-number {
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Button styling */
+.contact-button {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #3498db;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.contact-button:hover {
+    background-color: #2980b9;
+}
+
+.projects-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.project-item {
+    width: calc(33.33% - 20px); /* Asegura que haya tres proyectos por fila */
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+}
+img{
+    width: 200px;
+    height: 200px;
+}
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 30px 0;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
