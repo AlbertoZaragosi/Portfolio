@@ -1,120 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alberto Zaragosi - Portfolio</title>
-    <link id="style-link" rel="stylesheet" href="CSS/styles-default.css">
+    <link id="style-link" rel="stylesheet" href="CSS/styles-default.css" />
     <script src="JS/Scripts.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Navigation Bar -->
     <nav>
-        <ul>
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Welcome Section -->
     <header id="about">
-        <div class="container">
-            <h1>Your Name</h1>
-            <p>Aspiring Developer based in Spain</p>
-            <a href="about.html"><button>Learn More</button></a>
-        </div>
+      <div class="container">
+        <h1>Your Name</h1>
+        <p>Aspiring Developer based in Spain</p>
+        <a href="about.html"><button>Learn More</button></a>
+      </div>
     </header>
 
     <section id="ChangeStyle" class="container">
-        <h2>Change Style</h2>
-        <button id="style-button" onclick="changeStyle()">Try me!!</button>
-        <p>[<b>Default</b>]-[<b>Modern</b>]-[<b>Futurist</b>]-[<b>Cyberpunk</b>]-[<b>Pink</b>]</p>
+      <h2>Change Style</h2>
+      <button id="style-button" onclick="changeStyle()">Try me!!</button>
+      <p>
+        [<b>Default</b>]-[<b>Modern</b>]-[<b>Futurist</b>]-[<b>Cyberpunk</b>]-[<b>Pink</b>]
+      </p>
     </section>
-
 
     <!-- Skills Section -->
     <section id="skills" class="container">
-        <h2>Skills</h2>
-        <ul>
-            <li>HTML5</li>
-            <li>CSS3</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Node.js</li>
-            <!-- Add more skills as needed -->
-        </ul>
-        <a href="skills.html"><button>Explore Skills</button></a>
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML5</li>
+        <li>CSS3</li>
+        <li>JavaScript</li>
+        <li>React</li>
+        <li>Node.js</li>
+        <!-- Add more skills as needed -->
+      </ul>
+      <a href="skills.html"><button>Explore Skills</button></a>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="container">
-        <h2>Projects</h2>
-        <!-- information about projects here -->
-        <div class="projects-section">
-            <h3>Java Projects</h3>
-            <div class="projects-grid">
-                <a href="proyect1.html">
-                    <div class="project-item">
-                        <img src="java-project1.jpg" alt="Java Project 1">
-                        <h3>Java Project 1</h3>
-                    </div>
-                    <div class="project-item">
-                        <img src="java-project2.jpg" alt="Java Project 2">
-                        <h3>Java Project 2</h3>
-                    </div>
-                </a><!-- Agrega más proyectos de Java aquí -->
-            </div>
+      <h2>Projects</h2>
+      <!-- information about projects here -->
+      <div class="projects-section">
+        <h3>Java Projects</h3>
+        <div class="projects-grid">
+          <div class="project-item">
+            <a href="proyect1.html">
+              <img src="imgs/java_image.png" alt="Java Project 1" />
+              <h3>Java Project 1</h3>
+            </a>
+          </div>
+          <div class="project-item">
+            <a href="proyect1.html">
+                <img src="imgs/java_image.png" alt="Java Project 2" />
+                <h3>Java Project 2</h3>
+            </a>
+          </div>
+          <!-- Agrega más proyectos de Java aquí -->
         </div>
-    
-        <div class="projects-section">
-            <h3>Android Projects</h3>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <img src="android-project1.jpg" alt="Android Project 1">
-                    <h3>Android Project 1</h3>
-                </div>
-                <div class="project-item">
-                    <img src="android-project2.jpg" alt="Android Project 2">
-                    <h3>Android Project 2</h3>
-                </div>
-                <!-- Agrega más proyectos de Android aquí -->
-            </div>
+      </div>
+
+      <div class="projects-section">
+        <h3>Android Projects</h3>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="imgs/android_image.png" alt="Android Project 1" />
+            <h3>Android Project 1</h3>
+          </div>
+          <div class="project-item">
+            <img src="imgs/android_image.png" alt="Android Project 2" />
+            <h3>Android Project 2</h3>
+          </div>
+          <!-- Agrega más proyectos de Android aquí -->
         </div>
-    
-        <div class="projects-section">
-            <h3>C++ Projects</h3>
-            <div class="projects-grid">
-                <div class="project-item">
-                    <img src="cpp-project1.jpg" alt="C++ Project 1">
-                    <h3>C++ Project 1</h3>
-                </div>
-                <div class ="project-item">
-                    <img src="cpp-project2.jpg" alt="C++ Project 2">
-                    <h3>C++ Project 2</h3>
-                </div>
-                <!-- Agrega más proyectos de C++ aquí -->
-            </div>
+      </div>
+
+      <div class="projects-section">
+        <h3>C++ Projects</h3>
+        <div class="projects-grid">
+          <div class="project-item">
+            <img src="imgs/c++.png" alt="C++ Project 1" />
+            <h3>C++ Project 1</h3>
+          </div>
+          <div class="project-item">
+            <img src="imgs/c++.png" alt="C++ Project 2" />
+            <h3>C++ Project 2</h3>
+          </div>
+          <!-- Agrega más proyectos de C++ aquí -->
         </div>
-        
-        <a href="projects.html"><button>View Projects</button></a>
+      </div>
+
+      <a href="projects.html"><button>View Projects</button></a>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="container">
-        <h2>Contact</h2>
-        <p>Email: albertozartenorio@gmail.com</p>
-        <p>LinkedIn: <a href="https:\\www.linkedin.com/in/AlbertoZaragosiTenorio" target="_blank">Click me!</a></p>
-        <!-- With this method i reveal my number just in case they wanna call me -->
-        <a class="contact-button" onclick="revealPhoneNumber()">Contact Me</a>
+      <h2>Contact</h2>
+      <p>Email: albertozartenorio@gmail.com</p>
+      <p>
+        LinkedIn:
+        <a
+          href="https:\\www.linkedin.com/in/AlbertoZaragosiTenorio"
+          target="_blank"
+          >Click me!</a
+        >
+      </p>
+      <!-- With this method i reveal my number just in case they wanna call me -->
+      <a class="contact-button" onclick="revealPhoneNumber()">Contact Me</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p id="phone-number">&phone; +353 0899414829</p>
+      <p id="phone-number">&phone; +353 0899414829</p>
     </footer>
-
-</body>
+  </body>
 </html>
