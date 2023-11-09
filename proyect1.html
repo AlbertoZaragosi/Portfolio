@@ -4,34 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalles del Proyecto</title>
-    <link rel="stylesheet" href="CSS/styles-default.css">
+    <link id="cssLink" rel="stylesheet" href="CSS/styles-futurist.css">
+    <script src="JS/Scripts.js"></script>
 </head>
 <body>
 
-    <!-- Encabezado -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <ul>
+          <li><a href="#Details">Details</a></li>
+          <li><a href="#Video">Video</a></li>
+          <li><a href="#Git">Github repository</a></li>
+        </ul>
+      </nav>
 
-    <!-- Contenido del Proyecto -->
+    <header id="about">
+        <div class="container">
+          <h1><a href="index.html">Alberto Zaragosi Tenorio</a></h1>
+          <p>Spanish Junior Developer</p>
+          <a href="aboutMe.html"><button>Learn More About Me</button></a>
+        </div>
+      </header>
+
     <div class="project-details">
         <div class="container">
-            <h1>Nombre del Proyecto</h1>
+            <h1 id="Details">Nombre del Proyecto</h1>
             <div class="project-description">
                 <p>Descripción del proyecto que detalla sus características y objetivos.</p>
             </div>
-            <div class="project-video">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            <div class="project-video" id="Video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/lBB70hwxWec?si=3Evb3gwMxpt_nKaT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
             <div class="project-info">
-                <h2>Detalles Adicionales</h2>
+                <h2 id="Git">Detalles Adicionales</h2>
                 <ul>
                     <li>Fecha de inicio: [Fecha]</li>
                     <li>Tecnologías utilizadas: [Tecnologías]</li>
@@ -41,18 +45,9 @@
             </div>
         </div>
     </div>
-
-    <!-- Pie de Página (Barra de Navegación) -->
-    <footer>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </footer>
-
+    <script>
+        setStyle();
+    </script>
 </body>
+
 </html>

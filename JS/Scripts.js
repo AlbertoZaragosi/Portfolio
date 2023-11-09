@@ -6,11 +6,10 @@ function revealPhoneNumber() {
 
 // Array de estilos disponibles
 const styles = [
-    'styles-default.css',
-    'styles-modern.css',
-    'styles-futurist.css',
-    'styles-cyberpunk.css',
-    'styles-neon.css'
+    '../CSS/styles-futurist.css',
+    '../CSS/styles-cyberpunk.css',
+    '../CSS/styles-pink.css',
+    '../CSS/styles-pruple.css'
 ];
 
 // Índice del estilo actual
@@ -19,6 +18,20 @@ let currentStyleIndex = 0;
 // Función para cambiar el estilo
 function changeStyle() {
     currentStyleIndex = (currentStyleIndex + 1) % styles.length;
-    const styleLink = document.getElementById('style-link');
+    const styleLink = document.getElementById('cssLink');
     styleLink.setAttribute('href', `CSS/${styles[currentStyleIndex]}`);
+    localStorage.setItem("index",currentStyleIndex);
+    
+}
+
+function setStyle(){
+    let index = localStorage.getItem("index");
+    if(index ==null){
+        index = 0;
+    }else{
+        const styleLink = document.getElementById('cssLink');
+        styleLink.setAttribute('href', `CSS/${styles[index]}`);
+        currentStyleIndex = index;
+    }
+    
 }
