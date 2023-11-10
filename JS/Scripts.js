@@ -13,25 +13,24 @@ const styles = [
 ];
 
 // Índice del estilo actual
-let currentStyleIndex = 0;
+var currentStyleIndex = 0;
 
 // Función para cambiar el estilo
 function changeStyle() {
-    currentStyleIndex = (currentStyleIndex + 1) % styles.length;
+    currentStyleIndex = parseInt(currentStyleIndex);
+    currentStyleIndex = (currentStyleIndex+1) % styles.length;
     const styleLink = document.getElementById('cssLink');
     styleLink.setAttribute('href', `CSS/${styles[currentStyleIndex]}`);
     localStorage.setItem("index",currentStyleIndex);
-    
 }
 
 function setStyle(){
     let index = localStorage.getItem("index");
     if(index ==null){
         index = 0;
-    }else{
+        
+    }
         const styleLink = document.getElementById('cssLink');
         styleLink.setAttribute('href', `CSS/${styles[index]}`);
         currentStyleIndex = index;
-    }
-    
 }
