@@ -5,6 +5,11 @@ body {
     color: #660066; /* Morado oscuro */
 }
 
+img {
+    background-color: rgba(102, 102, 153, 20%);
+    border-radius: 20%;
+}
+
 nav {
     background-color: #ff66b2; /* Rosa brillante */
     padding: 10px;

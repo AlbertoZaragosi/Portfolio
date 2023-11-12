@@ -5,6 +5,11 @@ body {
     color: #fff;
 }
 
+img {
+    background-color: rgba(102, 102, 153, 20%);
+    border-radius: 20%;
+}
+
 nav {
     background-color: #333;
     padding: 10px;
