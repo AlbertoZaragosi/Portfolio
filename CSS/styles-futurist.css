@@ -27,11 +27,19 @@ nav a {
     font-weight: bold;
     font-size: 16px;
 }
-
-#Themes ul {
+/*
+#Themes ul li{
     display: flex;
+    flex-direction: row;
     justify-content: center;
+    float: left;
+    padding: 30px;
 }
+#Themes{
+    text-align: center;
+}
+*/
+
 
 header {
     background-color: #3498db;
