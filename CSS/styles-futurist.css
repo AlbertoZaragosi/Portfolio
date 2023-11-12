@@ -28,6 +28,11 @@ nav a {
     font-size: 16px;
 }
 
+#Themes ul {
+    display: flex;
+    justify-content: center;
+}
+
 header {
     background-color: #3498db;
     text-align: center;
