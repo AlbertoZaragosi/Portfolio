@@ -34,3 +34,4 @@ function setStyle(){
         styleLink.setAttribute('href', `CSS/${styles[index]}`);
         currentStyleIndex = index;
 }
+

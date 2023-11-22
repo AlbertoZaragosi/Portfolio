@@ -4,6 +4,14 @@ body {
     background-color: #7743DB;
     color: #FFFBF5;
 }
+/* Add some styles for the images */
+.image-container {
+    text-align: center;
+  }
+  .image-container img {
+    width: 300px; /* Adjust the width as needed */
+    margin: 10px;
+  }
 
 img {
     background-color: rgba(204, 255, 255, 20%);

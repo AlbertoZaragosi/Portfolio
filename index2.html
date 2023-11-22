@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alberto Zaragosi - Portfolio</title>
+  <link id="cssLink" rel="stylesheet" href="CSS/styles-futurist.css" />
+  <script src="JS/Scripts.js"></script>
+  <style>
+    /* Add some styles for the images */
+    .image-container {
+      text-align: center;
+      margin-top: 20px; /* Adjust margin as needed */
+    }
+    .image-container img {
+      width: 300px; /* Adjust the width as needed */
+      margin: 10px;
+      border-radius: 10px; /* Add border radius for rounded corners */
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="aboutMe.html">About Me</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header id="about">
+    <div class="container">
+      <a href="index.html"><h1><span id="typed-header"></span></h1></a>
+      <p>Spanish Junior Developer</p>
+      <a href="aboutMe.html"><button>Learn More About Me</button></a>
+    </div>
+  </header>
+
+  <!-- Add image section -->
+  <section class="image-container">
+    <a href="hobbies.html">
+      <img src="path/to/hobbies-image.jpg" alt="Hobbies" />
+      <p>Hobbies</p>
+    </a>
+    <a href="projects.html">
+      <img src="path/to/projects-image.jpg" alt="Projects" />
+      <p>Projects</p>
+    </a>
+    <a href="relevant.html">
+      <img src="path/to/relevant-image.jpg" alt="Relevant" />
+      <p>Relevant</p>
+    </a>
+  </section>
+
+  <section id="ChangeStyle" class="container">
+    <h2>Change Style</h2>
+    <button id="style-button" onclick="changeStyle()">Try me!!</button>
+    <p>
+      [<b>Default</b>]-[<b>Cyberpunk</b>]-[<b>Pink</b>]-[<b>Purple</b>]
+    </p>
+  </section>
+
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <ul>
+      <!-- Your existing skills list -->
+    </ul>
+  </section>
+
+  <section id="projects" class="container">
+    <!-- Your existing projects section -->
+  </section>
+
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <p>Email: albertozartenorio@gmail.com</p>
+    <p>
+      LinkedIn:
+      <a href="https:\\www.linkedin.com/in/AlbertoZaragosiTenorio" target="_blank">Click me!</a>
+    </p>
+    <!-- With this method, I reveal my number just in case they want to call me -->
+    <a class="contact-button" onclick="revealPhoneNumber()">Contact Me</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p id="phone-number">&phone; +353 0899414829</p>
+  </footer>
+
+  <script>
+    setStyle();
+    typeHeader();
+  </script>
+</body>
+</html>
