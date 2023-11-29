@@ -35,3 +35,14 @@ function setStyle(){
         currentStyleIndex = index;
 }
 
+var i = 0;
+var txt = "Alberto Zaragosi Tenorio";
+var speed = 50;
+function typeWriter() {
+    
+    if (i < txt.length) {
+      document.getElementById("myName").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
