@@ -129,3 +129,29 @@ footer {
 .dark-mode .skill:hover {
     background-color: #555;
 }
+
+
+/* Profile section styling */
+#profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Styling for the profile image */
+#profile-image {
+    width: 150px; /* Adjust the width as needed */
+    height: 150px; /* Ensures the image is square */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 10px; /* Space between the image and the name */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds a subtle shadow for depth */
+}
+
+/* Description paragraph styling */
+#description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,94 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alberto Zaragosi | Backend Developer</title>
     <!-- Links the external stylesheet -->
-    <link rel="stylesheet" href="CSS/styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="CSS/styles.css" />
+  </head>
+  <body>
     <!-- Page header -->
     <header>
-        <!-- Language toggle section -->
-        <div class="lang-toggle">
-            <button id="lang-en" onclick="setLanguage('en')">English</button>
-            <button id="lang-es" onclick="setLanguage('es')">Español</button>
-        </div>
-        <!-- Button to toggle dark mode -->
-        <button id="dark-mode-toggle">Dark Mode</button>
+      <!-- Language toggle section -->
+      <div class="lang-toggle">
+        <button id="lang-en" onclick="setLanguage('en')">English</button>
+        <button id="lang-es" onclick="setLanguage('es')">Español</button>
+      </div>
+      <!-- Button to toggle dark mode -->
+      <button id="dark-mode-toggle">Dark Mode</button>
     </header>
 
     <!-- Profile section -->
     <section id="profile">
-        <h1 id="name">Alberto Zaragosi Tenorio</h1>
-        <p id="title">Back-end Developer</p>
-        <p id="location">Blackrock, Dublin</p>
-        <p id="description">
-            Recent graduate in Cross-platform Application Development with experience in web and software development. 
-            Committed to creating efficient software solutions and continuous improvement through learning and practice. 
-            Seeking an opportunity to start my career as a Junior Developer in a dynamic company.
-        </p>
-        <!-- Contact information -->
-        <p id="contact">
-            <span id="contact-label">Contact:</span> 
-            <a href="mailto:albertozartenorio@gmail.com" id="email-link">albertozartenorio@gmail.com</a> | 
-            <a href="https://linkedin.com/in/albertozaragositenorio" target="_blank" id="linkedin-link">LinkedIn</a>
-        </p>
+      <!-- Profile Image -->
+      <img
+        src="https://media.licdn.com/dms/image/D4E03AQGeegjGywqK7g/profile-displayphoto-shrink_200_200/0/1701887227319?e=2147483647&v=beta&t=GCZnWFYztz0EDW9w1S73emASNyTw-8muLnvrboF3kYo"
+        alt="Alberto Zaragosi"
+        id="profile-image"
+      />
+
+
+      <h1 id="name">Alberto Zaragosi Tenorio</h1>
+      <p id="title">Back-end Developer</p>
+      <p id="location">Blackrock, Dublin</p>
+      <p id="description">
+        Recent graduate in Cross-platform Application Development with
+        experience in web and software development. Committed to creating
+        efficient software solutions and continuous improvement through learning
+        and practice. Seeking an opportunity to start my career as a Junior
+        Developer in a dynamic company.
+      </p>
+      <!-- Contact information -->
+      <p id="contact">
+        <span id="contact-label">Contact:</span>
+        <a href="mailto:albertozartenorio@gmail.com" id="email-link"
+          >albertozartenorio@gmail.com</a
+        >
+        |
+        <a
+          href="https://linkedin.com/in/albertozaragositenorio"
+          target="_blank"
+          id="linkedin-link"
+          >LinkedIn</a
+        >
+      </p>
     </section>
 
     <!-- Experience section -->
     <section id="experience">
-        <h2 id="experience-title">Experience</h2>
-        <div class="job">
-            <h3 id="job-title">Back-end Developer Intern</h3>
-            <p id="job-location">TEIX, Madrid (Remote) | March 2024 - June 2024</p>
-            <ul id="job-tasks">
-                <li>Actively participated in backend application development.</li>
-                <li>Collaborated on scalable solutions using modern technologies.</li>
-            </ul>
-        </div>
+      <h2 id="experience-title">Experience</h2>
+      <div class="job">
+        <h3 id="job-title">Back-end Developer Intern</h3>
+        <p id="job-location">TEIX, Madrid (Remote) | March 2024 - June 2024</p>
+        <ul id="job-tasks">
+          <li>Actively participated in backend application development.</li>
+          <li>Collaborated on scalable solutions using modern technologies.</li>
+        </ul>
+      </div>
     </section>
 
     <!-- Skills section -->
     <section id="skills">
-        <h2 id="skills-title">Skills</h2>
-        <div class="skill-set">
-            <div class="skill">
-                <h3>Programming Languages</h3>
-                <p>Java, JavaScript, PHP, Kotlin</p>
-            </div>
-            <div class="skill">
-                <h3>Web Development</h3>
-                <p>HTML5, CSS3, JavaScript</p>
-            </div>
-            <div class="skill">
-                <h3>Databases</h3>
-                <p>MySQL, Oracle Database</p>
-            </div>
-            <div class="skill">
-                <h3>Frameworks & Tools</h3>
-                <p>Spring Boot, Laravel, GitHub</p>
-            </div>
+      <h2 id="skills-title">Skills</h2>
+      <div class="skill-set">
+        <div class="skill">
+          <h3>Programming Languages</h3>
+          <p>Java, JavaScript, PHP, Kotlin</p>
         </div>
+        <div class="skill">
+          <h3>Web Development</h3>
+          <p>HTML5, CSS3, JavaScript</p>
+        </div>
+        <div class="skill">
+          <h3>Databases</h3>
+          <p>MySQL, Oracle Database</p>
+        </div>
+        <div class="skill">
+          <h3>Frameworks & Tools</h3>
+          <p>Spring Boot, Laravel, GitHub</p>
+        </div>
+      </div>
     </section>
 
     <!-- Education section -->
     <section id="education">
-        <h2 id="education-title">Education</h2>
-        <p id="education-info">Higher National Diploma in Cross-Platform Application Development</p>
-        <p id="education-institution">UNIRFP, Madrid | September 2021 - June 2024</p>
+      <h2 id="education-title">Education</h2>
+      <p id="education-info">
+        Higher National Diploma in Cross-Platform Application Development
+      </p>
+      <p id="education-institution">
+        UNIRFP, Madrid | September 2021 - June 2024
+      </p>
     </section>
-    <br/>
-    <br/>
-    <br/>
+    <br />
+    <br />
+    <br />
 
     <!-- Footer section -->
     <footer>
-        <p>&copy; 2024 Alberto Zaragosi</p>
+      <p>&copy; 2024 Alberto Zaragosi</p>
     </footer>
 
     <!-- Link to the external JavaScript file -->
     <script src="JS/Scripts.js"></script>
-</body>
+  </body>
 </html>
