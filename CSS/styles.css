@@ -1,0 +1,131 @@
+/* Global styles for the document */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header styling */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #222;
+    color: white;
+}
+
+/* Styling for language toggle and dark mode buttons */
+.lang-toggle button, #dark-mode-toggle {
+    margin-right: 10px;
+    padding: 5px 10px;
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.lang-toggle button:hover, #dark-mode-toggle:hover {
+    background-color: #ddd;
+}
+
+/* General section styling */
+section {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+/* Profile section specific styling */
+#profile {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Description paragraph styling */
+#description {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Margin adjustments for various sections */
+#experience, #skills, #education {
+    margin-bottom: 40px;
+}
+
+/* Grid layout for skills */
+.skill-set {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+/* Individual skill block styling */
+.skill {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.skill:hover {
+    background-color: #e0e0e0;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Dark mode specific styles */
+.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.dark-mode header {
+    background-color: #111;
+}
+
+.dark-mode footer {
+    background-color: #111;
+}
+
+.dark-mode .skill {
+    background-color: #444;
+    color: #ddd;
+}
+
+.dark-mode .skill:hover {
+    background-color: #555;
+}

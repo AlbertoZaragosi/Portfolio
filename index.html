@@ -1,136 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alberto Zaragosi - Portfolio</title>
-    <link id="cssLink" rel="stylesheet" href="CSS/styles-futurist.css" />
-    <script src="JS/Scripts.js"></script>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="aboutMe.html">About Me</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <!--
-    <div id="Themes">
-      <ul>
-        <li><button>Default</button></li>
-        <li><button>Green</button></li>
-        <li><button>Pink</button></li>
-        <li><button>Purple</button></li>
-        
-      </ul>
-    </div>-->
-
-    <header id="about">
-      <div class="container">
-        <h1><a href="index.html" id="myName"></a></h1>
-        <p>Spanish Junior Developer</p>
-        <a href="aboutMe.html"><button>Learn More About Me</button></a>
-      </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alberto Zaragosi | Backend Developer</title>
+    <!-- Links the external stylesheet -->
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Page header -->
+    <header>
+        <!-- Language toggle section -->
+        <div class="lang-toggle">
+            <button id="lang-en" onclick="setLanguage('en')">English</button>
+            <button id="lang-es" onclick="setLanguage('es')">Español</button>
+        </div>
+        <!-- Button to toggle dark mode -->
+        <button id="dark-mode-toggle">Dark Mode</button>
     </header>
 
-    <section id="ChangeStyle" class="container">
-      <h2>Change Style</h2>
-      <button id="style-button" onclick="changeStyle()">Try me!!</button>
-      <p>
-        [<b>Default</b>]-[<b>Cyberpunk</b>]-[<b>Pink</b>]-[<b>Purple</b>]
-      </p>
+    <!-- Profile section -->
+    <section id="profile">
+        <h1 id="name">Alberto Zaragosi Tenorio</h1>
+        <p id="title">Back-end Developer</p>
+        <p id="location">Blackrock, Dublin</p>
+        <p id="description">
+            Recent graduate in Cross-platform Application Development with experience in web and software development. 
+            Committed to creating efficient software solutions and continuous improvement through learning and practice. 
+            Seeking an opportunity to start my career as a Junior Developer in a dynamic company.
+        </p>
+        <!-- Contact information -->
+        <p id="contact">
+            <span id="contact-label">Contact:</span> 
+            <a href="mailto:albertozartenorio@gmail.com" id="email-link">albertozartenorio@gmail.com</a> | 
+            <a href="https://linkedin.com/in/albertozaragositenorio" target="_blank" id="linkedin-link">LinkedIn</a>
+        </p>
     </section>
 
-    <section id="skills" class="container">
-      <h2>Skills</h2>
-      <ul>
-        <li>HTML5</li>
-        <li>CSS3</li>
-        <li>JavaScript</li>
-        <li>Java</li>
-        <li>MYSQL</li>
-        <li>Oracle Database</li>
-        <li>NetBeans</li>
-        <li>Workbench</li>
-        <li>Scene Builder</li>
-        <li>JavaFX</li>
-        <li>GitHub</li>
-        <li>Visual Studio</li>
-      </ul>
-    </section>
-
-    <section id="projects" class="container">
-      <h2>Projects</h2>
-      <div class="projects-section">
-        <h3>Java Projects</h3>
-        <div class="projects-grid">
-          <div class="project-item">
-            <a href="ChatJavaProyect.html">
-              <img src="imgs/java_image.png" alt="Java Project 1" />
-              <h3>Chat Server Client</h3>
-            </a>
-          </div>
-          <div class="project-item">
-            <a href="TikTakToe.html">
-                <img src="imgs/java_image.png" alt="Java Project 2" />
-                <h3>Tik Tak Toe</h3>
-            </a>
-          </div>
+    <!-- Experience section -->
+    <section id="experience">
+        <h2 id="experience-title">Experience</h2>
+        <div class="job">
+            <h3 id="job-title">Back-end Developer Intern</h3>
+            <p id="job-location">TEIX, Madrid (Remote) | March 2024 - June 2024</p>
+            <ul id="job-tasks">
+                <li>Actively participated in backend application development.</li>
+                <li>Collaborated on scalable solutions using modern technologies.</li>
+            </ul>
         </div>
-      </div>
-<!--
-      <div class="projects-section">
-        <h3>Android Projects</h3>
-        <div class="projects-grid">
-          <div class="project-item">
-            <img src="imgs/android_image.png" alt="Android Project 1" />
-            <h3>Android Project 1</h3>
-          </div>
-          <div class="project-item">
-            <img src="imgs/android_image.png" alt="Android Project 2" />
-            <h3>Android Project 2</h3>
-          </div>
-        </div>
-      </div>
-
-      <div class="projects-section">
-        <h3>C++ Projects</h3>
-        <div class="projects-grid">
-          <div class="project-item">
-            <img src="imgs/c++.png" alt="C++ Project 1" />
-            <h3>C++ Project 1</h3>
-          </div>
-          <div class="project-item">
-            <img src="imgs/c++.png" alt="C++ Project 2" />
-            <h3>C++ Project 2</h3>
-          </div>
-        </div>
-      </div>-->
-    </section>
-    <section id="contact" class="container">
-      <h2>Contact</h2>
-      <p>Email: albertozartenorio@gmail.com</p>
-      <p>
-        LinkedIn:
-        <a
-          href="https:\\www.linkedin.com/in/AlbertoZaragosiTenorio"
-          target="_blank"
-          >Click me!</a
-        >
-      </p>
-      <!-- With this method i reveal my number just in case they wanna call me -->
-      <a class="contact-button" onclick="revealPhoneNumber()">Contact Me</a>
     </section>
 
-    <!-- Footer -->
+    <!-- Skills section -->
+    <section id="skills">
+        <h2 id="skills-title">Skills</h2>
+        <div class="skill-set">
+            <div class="skill">
+                <h3>Programming Languages</h3>
+                <p>Java, JavaScript, PHP, Kotlin</p>
+            </div>
+            <div class="skill">
+                <h3>Web Development</h3>
+                <p>HTML5, CSS3, JavaScript</p>
+            </div>
+            <div class="skill">
+                <h3>Databases</h3>
+                <p>MySQL, Oracle Database</p>
+            </div>
+            <div class="skill">
+                <h3>Frameworks & Tools</h3>
+                <p>Spring Boot, Laravel, GitHub</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education section -->
+    <section id="education">
+        <h2 id="education-title">Education</h2>
+        <p id="education-info">Higher National Diploma in Cross-Platform Application Development</p>
+        <p id="education-institution">UNIRFP, Madrid | September 2021 - June 2024</p>
+    </section>
+    <br/>
+    <br/>
+    <br/>
+
+    <!-- Footer section -->
     <footer>
-      <p id="phone-number">&phone; +353 0899414829</p>
+        <p>&copy; 2024 Alberto Zaragosi</p>
     </footer>
-    <script>
-      setStyle();
-      typeWriter();
-    </script>
-  </body>
+
+    <!-- Link to the external JavaScript file -->
+    <script src="JS/Scripts.js"></script>
+</body>
 </html>
