@@ -22,7 +22,7 @@ const translations = {
         ],
         educationInfo: "Higher National Diploma in Cross-Platform Application Development",
         educationInstitution: "UNIRFP, Madrid | September 2021 - June 2024",
-        description: "Recent graduate in Cross-platform Application Development with experience in web and software development. Committed to creating efficient software solutions and continuous improvement through learning and practice. Seeking an opportunity to start my career as a Junior Developer in a dynamic company."
+        description: "Full Stack Development with experience in web and software development. Committed to creating efficient software solutions and continuous improvement through learning and practice. Seeking an opportunity to start my career as a Junior Developer in a dynamic company."
     },
     es: {
         name: "Alberto Zaragosi Tenorio",
@@ -40,7 +40,7 @@ const translations = {
         ],
         educationInfo: "Grado Superior en Desarrollo de Aplicaciones Multiplataforma",
         educationInstitution: "UNIRFP, Madrid | Septiembre 2021 - Junio 2024",
-        description:"Recién graduado en Desarrollo de Aplicaciones Multiplataforma con experiencia en desarrollo web y software. Comprometido con la creación de soluciones de software eficientes y la mejora continua a través del aprendizaje y la práctica. Buscando una oportunidad para iniciar mi carrera como Desarrollador Junior en una empresa dinámica."
+        description:"Full Stack developer con experiencia en desarrollo web y software. Comprometido con la creación de soluciones de software eficientes y la mejora continua a través del aprendizaje y la práctica. Buscando una oportunidad para iniciar mi carrera como Desarrollador Junior en una empresa dinámica."
     }
 };
 
